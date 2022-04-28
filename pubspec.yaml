@@ -1,0 +1,36 @@
+name: liso
+description: Landing page for Liso
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # STATE MANAGEMENT
+  get: 4.6.1
+
+  # UI
+  flutter_svg: 1.0.3
+  line_icons: ^2.0.1
+  flex_color_scheme: 5.0.0 # themes
+
+  # TOOLS
+  logger: ^1.1.0
+  url_launcher: 6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
