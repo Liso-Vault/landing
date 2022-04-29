@@ -28,5 +28,5 @@ class Styles {
     focusedErrorBorder: inputBorder,
   );
 
-  static const containerConstraints = BoxConstraints(maxWidth: 500);
+  static const containerConstraints = BoxConstraints(maxWidth: 700);
 }

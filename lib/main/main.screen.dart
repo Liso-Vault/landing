@@ -14,6 +14,8 @@ class MainScreen extends GetView<MainScreenController> {
 
   @override
   Widget build(BuildContext context) {
+    final buttonWidth = Get.mediaQuery.size.width <= 450 ? 130.0 : 200.0;
+
     final content = Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -31,90 +33,124 @@ class MainScreen extends GetView<MainScreenController> {
         ),
         const Divider(height: 30),
         const Text(
-          'Download (Beta)',
-          style: TextStyle(fontSize: 25),
+          'Join the beta',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.grey,
+          ),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 10),
         Wrap(
           runSpacing: 10,
           alignment: WrapAlignment.center,
           children: [
             SizedBox(
-              width: 150,
+              width: buttonWidth,
               child: ElevatedButton.icon(
-                label: const Text('Android'),
+                label: const Text(
+                  'Android',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 icon: const Icon(LineIcons.googlePlay),
                 onPressed: () => launchUrlString(kAndroidUrl),
               ),
             ),
             const SizedBox(width: 10),
             SizedBox(
-              width: 150,
+              width: buttonWidth,
               child: ElevatedButton.icon(
-                label: const Text('iOS'),
-                icon: const Icon(LineIcons.appStore),
-                onPressed: () => launchUrlString(kIOSUrl),
-              ),
-            ),
-            const SizedBox(width: 10),
-            SizedBox(
-              width: 150,
-              child: ElevatedButton.icon(
-                label: const Text('Mac'),
+                label: const Text(
+                  'Mac',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 icon: const Icon(LineIcons.appStore),
                 onPressed: () => launchUrlString(kMacOSUrl),
               ),
             ),
             const SizedBox(width: 10),
             SizedBox(
-              width: 150,
+              width: buttonWidth,
               child: ElevatedButton.icon(
-                label: const Text('Windows'),
+                label: const Text(
+                  'iOS',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                icon: const Icon(LineIcons.appStore),
+                onPressed: null,
+              ),
+            ),
+            const SizedBox(width: 10),
+            SizedBox(
+              width: buttonWidth,
+              child: ElevatedButton.icon(
+                label: const Text(
+                  'Windows',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 icon: const Icon(LineIcons.windows),
                 onPressed: null,
               ),
             ),
             const SizedBox(width: 10),
             SizedBox(
-              width: 150,
+              width: buttonWidth,
               child: ElevatedButton.icon(
-                label: const Text('Linux'),
+                label: const Text(
+                  'Linux',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 icon: const Icon(LineIcons.linux),
                 onPressed: null,
               ),
             ),
             const SizedBox(width: 10),
             SizedBox(
-              width: 150,
+              width: buttonWidth,
               child: ElevatedButton.icon(
-                label: const Text('Web'),
+                label: const Text(
+                  'Web',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 icon: const Icon(LineIcons.chrome),
                 onPressed: null,
               ),
             )
           ],
         ),
-        const Divider(height: 50),
+        const Divider(height: 20),
         const Text(
           kAppInviteText,
           textAlign: TextAlign.center,
+        ),
+        const SizedBox(height: 10),
+        const Text(
+          kAppAirdropText,
+          textAlign: TextAlign.center,
           style: TextStyle(color: Colors.grey),
         ),
-        const Divider(height: 50),
+        const Divider(height: 40),
         const Text(
           'Connect',
-          style: TextStyle(color: Colors.grey),
+          style: TextStyle(
+            color: Colors.grey,
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
         ),
         const SizedBox(height: 10),
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            IconButton(
+            TextButton.icon(
               icon: const Icon(LineIcons.twitter),
+              label: const Text('@Liso_Vault'),
               onPressed: () => launchUrlString(kAppTwitterUrl),
             ),
-            IconButton(
+            const SizedBox(width: 10),
+            TextButton.icon(
               icon: const Icon(LineIcons.discord),
+              label: const Text('Discord'),
               onPressed: () => launchUrlString(kAppDiscordUrl),
             ),
             // IconButton(
@@ -131,8 +167,7 @@ class MainScreen extends GetView<MainScreenController> {
             // ),
           ],
         ),
-        const Divider(),
-        const SizedBox(height: 20),
+        const Divider(height: 20),
         TextButton.icon(
           icon: const Icon(LineIcons.twitter),
           label: const Text(kDeveloperTwitterHandle),
@@ -143,8 +178,11 @@ class MainScreen extends GetView<MainScreenController> {
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.grey),
         ),
-        const SizedBox(height: 20),
-        const Divider(),
+        const Divider(height: 20),
+        const Text(
+          'By installing and using $kAppName, you agree to our',
+          textAlign: TextAlign.center,
+        ),
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -153,6 +191,7 @@ class MainScreen extends GetView<MainScreenController> {
               icon: const Icon(LineIcons.alternateExternalLink),
               label: const Text('Privacy'),
             ),
+            const Text('and'),
             TextButton.icon(
               onPressed: () => Get.toNamed(Routes.terms),
               icon: const Icon(LineIcons.alternateExternalLink),
@@ -164,8 +203,8 @@ class MainScreen extends GetView<MainScreenController> {
     );
 
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Center(
+      body: Center(
+        child: SingleChildScrollView(
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 30),
             constraints: Styles.containerConstraints,

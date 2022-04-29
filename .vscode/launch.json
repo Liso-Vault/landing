@@ -5,15 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "landing",
+            "name": "debug",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "args": ["-d", "chrome","--web-port", "5555"],
         },
         {
             "name": "release",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release"
+            "flutterMode": "release",
+            "args": ["-d", "chrome","--web-port", "5555"],
         }
     ]
 }

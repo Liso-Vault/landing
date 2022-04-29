@@ -9,7 +9,10 @@ const kAppDescription =
     'A Cross-Platform, Non custodial, Trustless, Decentralized, Military-grade encrypted vault + crypto wallet specifically designed for storing sensitive to super sensitive information and files.'; // TODO: localize
 
 const kAppInviteText =
-    "Don't miss the train! Be one of the early users of the revolutionary app Liso where you can store your sensitive data and files securely and censorship-free with the power of decentralization. Just how it should be.\n\nTesters who help and contribute in anyway will definitely be included in the airdrop once our Token is live!";
+    "Don't miss the train! Be one of the early users of the revolutionary app Liso where you can store your sensitive data and files securely and censorship-free with the power of decentralization. Just how it should be.";
+
+const kAppAirdropText =
+    "Testers who are active, providing feedback, and contribute in a significant way will definitely be included in our upcoming airdrop before official launch!";
 
 const kAppTwitterUrl = 'https://twitter.com/liso_vault';
 const kAppDiscordUrl = 'https://discord.gg/d4EehG5qr3';

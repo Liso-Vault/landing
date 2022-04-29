@@ -1,11 +1,11 @@
 {
-    "name": "landing",
-    "short_name": "landing",
+    "name": "Liso",
+    "short_name": "Liso",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#262626",
+    "theme_color": "#02f297",
+    "description": "A Non custodial, Trustless, Decentralized, Military-grade encrypted vault + crypto wallet specifically designed for storing sensitive data and files.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
