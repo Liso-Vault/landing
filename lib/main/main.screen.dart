@@ -73,11 +73,11 @@ class MainScreen extends GetView<MainScreenController> {
               width: buttonWidth,
               child: ElevatedButton.icon(
                 label: const Text(
-                  'iOS',
+                  'Windows',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                icon: const Icon(LineIcons.appStore),
-                onPressed: null,
+                icon: const Icon(LineIcons.windows),
+                onPressed: () => launchUrlString(kWindowsUrl),
               ),
             ),
             const SizedBox(width: 10),
@@ -85,10 +85,10 @@ class MainScreen extends GetView<MainScreenController> {
               width: buttonWidth,
               child: ElevatedButton.icon(
                 label: const Text(
-                  'Windows',
+                  'iOS',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                icon: const Icon(LineIcons.windows),
+                icon: const Icon(LineIcons.appStore),
                 onPressed: null,
               ),
             ),

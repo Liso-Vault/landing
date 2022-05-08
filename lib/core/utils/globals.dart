@@ -23,6 +23,8 @@ const kAndroidUrl =
 const kIOSUrl = '';
 const kMacOSUrl =
     'https://github.com/Liso-Vault/liso-vault.github.io/raw/master/files/Liso_v0.3.0%2B2.dmg';
+const kWindowsUrl =
+    'https://github.com/Liso-Vault/liso-vault.github.io/raw/master/files/Liso_v0.3.012.0.exe';
 
 // DEVELOPER
 const kDeveloperName = 'Stackwares';
