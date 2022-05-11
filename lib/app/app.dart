@@ -40,7 +40,7 @@ class App extends StatelessWidget {
       // THEMING
       darkTheme: FlexColorScheme.dark(
         scheme: FlexScheme.green,
-        colors: FlexSchemeColor.from(primary: kAppColor),
+        colors: FlexSchemeColor.from(primary: kColor),
         appBarElevation: 0.3,
         subThemesData: subThemes,
         onSurface: Colors.grey.shade500, // popupmenu background color

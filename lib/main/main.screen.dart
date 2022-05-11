@@ -19,19 +19,19 @@ class MainScreen extends GetView<MainScreenController> {
     final content = Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Image.asset(Images.logo, width: 200),
-        const SizedBox(height: 15),
+        Image.asset(Images.logo, width: 170),
+        const SizedBox(height: 30),
         const Text(
-          kAppName,
+          kName,
           style: TextStyle(fontSize: 40),
         ),
-        const SizedBox(height: 15),
+        const SizedBox(height: 5),
         const Text(
-          kAppDescription,
+          kDescription,
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 16),
         ),
-        const Divider(height: 30),
+        const Divider(height: 50),
         const Text(
           'Join the beta',
           style: TextStyle(
@@ -120,12 +120,12 @@ class MainScreen extends GetView<MainScreenController> {
         ),
         const Divider(height: 20),
         const Text(
-          kAppInviteText,
+          kInviteText,
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 10),
         const Text(
-          kAppAirdropText,
+          kAirdropText,
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.grey),
         ),
@@ -139,48 +139,65 @@ class MainScreen extends GetView<MainScreenController> {
           ),
         ),
         const SizedBox(height: 10),
-        Row(
-          mainAxisSize: MainAxisSize.min,
+        Wrap(
+          alignment: WrapAlignment.center,
           children: [
             TextButton.icon(
               icon: const Icon(LineIcons.twitter),
-              label: const Text('@Liso_Vault'),
-              onPressed: () => launchUrlString(kAppTwitterUrl),
+              label: const Text('Twitter'),
+              onPressed: () => launchUrlString(kTwitterUrl),
             ),
             const SizedBox(width: 10),
             TextButton.icon(
               icon: const Icon(LineIcons.discord),
               label: const Text('Discord'),
-              onPressed: () => launchUrlString(kAppDiscordUrl),
+              onPressed: () => launchUrlString(kDiscordUrl),
+            ),
+            const SizedBox(width: 10),
+            TextButton.icon(
+              icon: const Icon(LineIcons.envelope),
+              label: const Text('Email'),
+              onPressed: () => launchUrlString(kEmail),
+            ),
+            const SizedBox(width: 10),
+            TextButton.icon(
+              icon: const Icon(LineIcons.github),
+              label: const Text('GitHub'),
+              onPressed: () => launchUrlString(kGitHubUrl),
             ),
             // IconButton(
             //   icon: const Icon(LineIcons.discord),
-            //   onPressed: () => launchUrlString(kAppTwitterUrl),
+            //   onPressed: () => launchUrlString(kTwitterUrl),
             // ),
             // IconButton(
             //   icon: const Icon(LineIcons.twitter),
-            //   onPressed: () => launchUrlString(kAppTwitterUrl),
+            //   onPressed: () => launchUrlString(kTwitterUrl),
             // ),
             // IconButton(
             //   icon: const Icon(LineIcons.twitter),
-            //   onPressed: () => launchUrlString(kAppTwitterUrl),
+            //   onPressed: () => launchUrlString(kTwitterUrl),
             // ),
           ],
         ),
-        const Divider(height: 20),
-        TextButton.icon(
-          icon: const Icon(LineIcons.twitter),
-          label: const Text(kDeveloperTwitterHandle),
-          onPressed: () => launchUrlString(kDeveloperTwitterUrl),
+        const Divider(height: 50),
+        Image.asset(Images.stackwares, width: 50),
+        const SizedBox(height: 20),
+        const Text(
+          kDeveloperName,
+          style: TextStyle(color: Colors.white, fontSize: 20),
+        ),
+        TextButton(
+          child: const Text(kDeveloperWebsite),
+          onPressed: () => launchUrlString(kDeveloperWebsite),
         ),
         const Text(
-          'Developer',
+          'Developer & Maintainer',
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.grey),
         ),
         const Divider(height: 20),
         const Text(
-          'By installing and using $kAppName, you agree to our',
+          'By installing and using $kName, you agree to our',
           textAlign: TextAlign.center,
         ),
         Row(

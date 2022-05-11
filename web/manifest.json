@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#262626",
     "theme_color": "#02f297",
-    "description": "A Non custodial, Trustless, Decentralized, Military-grade encrypted vault + crypto wallet specifically designed for storing sensitive data and files.",
+    "description": "An open-source data management application that focuses mainly on securely storing private information and files.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
