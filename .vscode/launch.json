@@ -5,10 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "debug",
+            "name": "debug-html",
             "request": "launch",
             "type": "dart",
-            "args": ["-d", "chrome","--web-port", "5555"],
+            "args": ["-d", "chrome","--web-port", "5555", "--web-renderer", "html"],
+        },
+        {
+            "name": "debug-canvaskit",
+            "request": "launch",
+            "type": "dart",
+            "args": ["-d", "chrome","--web-port", "5555", "--web-renderer", "canvaskit"],
         },
         {
             "name": "release",
