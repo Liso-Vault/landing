@@ -26,25 +26,37 @@ class MainScreen extends GetView<MainScreenController> {
           style: TextStyle(fontSize: 40),
         ),
         const SizedBox(height: 5),
-        const Text(
+        Text(
           kDescription,
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 20, color: Colors.grey.shade400),
         ),
-        const Divider(height: 50),
+        const Divider(height: 0),
+        const SizedBox(height: 20),
         const Text(
           'Join the beta',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
-            color: Colors.grey,
           ),
         ),
-        const SizedBox(height: 10),
+        const SizedBox(height: 20),
         Wrap(
           runSpacing: 10,
           alignment: WrapAlignment.center,
           children: [
+            SizedBox(
+              width: buttonWidth,
+              child: ElevatedButton.icon(
+                label: const Text(
+                  'iOS',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                icon: const Icon(LineIcons.appStore),
+                onPressed: () => launchUrlString(kIOSUrl),
+              ),
+            ),
+            const SizedBox(width: 10),
             SizedBox(
               width: buttonWidth,
               child: ElevatedButton.icon(
@@ -85,18 +97,6 @@ class MainScreen extends GetView<MainScreenController> {
               width: buttonWidth,
               child: ElevatedButton.icon(
                 label: const Text(
-                  'iOS',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                icon: const Icon(LineIcons.appStore),
-                onPressed: null,
-              ),
-            ),
-            const SizedBox(width: 10),
-            SizedBox(
-              width: buttonWidth,
-              child: ElevatedButton.icon(
-                label: const Text(
                   'Linux',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
@@ -118,7 +118,7 @@ class MainScreen extends GetView<MainScreenController> {
             )
           ],
         ),
-        const Divider(height: 20),
+        const SizedBox(height: 20),
         const Text(
           kInviteText,
           textAlign: TextAlign.center,
@@ -140,6 +140,7 @@ class MainScreen extends GetView<MainScreenController> {
         ),
         const SizedBox(height: 10),
         Wrap(
+          runSpacing: 10,
           alignment: WrapAlignment.center,
           children: [
             TextButton.icon(
@@ -165,18 +166,12 @@ class MainScreen extends GetView<MainScreenController> {
               label: const Text('GitHub'),
               onPressed: () => launchUrlString(kGitHubUrl),
             ),
-            // IconButton(
-            //   icon: const Icon(LineIcons.discord),
-            //   onPressed: () => launchUrlString(kTwitterUrl),
-            // ),
-            // IconButton(
-            //   icon: const Icon(LineIcons.twitter),
-            //   onPressed: () => launchUrlString(kTwitterUrl),
-            // ),
-            // IconButton(
-            //   icon: const Icon(LineIcons.twitter),
-            //   onPressed: () => launchUrlString(kTwitterUrl),
-            // ),
+            const SizedBox(width: 10),
+            TextButton.icon(
+              icon: const Icon(LineIcons.productHunt),
+              label: const Text('ProductHunt'),
+              onPressed: () => launchUrlString(kProductHuntUrl),
+            ),
           ],
         ),
         const Divider(height: 50),

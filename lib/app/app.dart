@@ -46,6 +46,10 @@ class App extends StatelessWidget {
         onSurface: Colors.grey.shade500, // popupmenu background color
         scaffoldBackground: const Color(0xFF161616),
         background: const Color(0xFF1C1C1C), // drawer background color
+        textTheme: const TextTheme(
+          // bodyText2: TextStyle(fontSize: 20.0),
+          button: TextStyle(fontSize: 17),
+        ),
       ).toTheme,
       themeMode: ThemeMode.dark,
       // UNKNOWN ROUTE FALLBACK SCREEN

@@ -21,10 +21,12 @@ const kAirdropText =
 const kGitHubUrl = 'https://github.com/Liso-Vault';
 const kTwitterUrl = 'https://twitter.com/liso_vault';
 const kDiscordUrl = 'https://discord.gg/d4EehG5qr3';
+const kProductHuntUrl =
+    'https://www.producthunt.com/posts/liso-password-manager';
 const kEmail = 'mailto:dev@liso.dev';
 
 // DOWNLOAD URLS
-const kIOSUrl = '';
+const kIOSUrl = 'https://appdistribution.firebase.dev/i/af79efd9bce30e26';
 const kAndroidUrl =
     'https://play.google.com/store/apps/details?id=com.liso.app';
 const kMacOSUrl =
