@@ -40,6 +40,10 @@ class MainScreen extends GetView<MainScreenController> {
             fontWeight: FontWeight.bold,
           ),
         ),
+        const Text(
+          kBetaSubText,
+          style: TextStyle(color: Colors.grey),
+        ),
         const SizedBox(height: 20),
         Wrap(
           runSpacing: 10,

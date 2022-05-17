@@ -6,6 +6,8 @@ const kColor = Color(0xff02f297);
 // TEXTS
 const kName = 'Liso';
 
+const kBetaSubText = 'v0.3.1+16 - May 17, 2022';
+
 const kDescription = """
 An open-source data management application that focuses mainly on securely storing private information and files.
 
