@@ -30,9 +30,9 @@ const kIOSUrl = 'https://appdistribution.firebase.dev/i/af79efd9bce30e26';
 const kAndroidUrl =
     'https://play.google.com/store/apps/details?id=com.liso.app';
 const kMacOSUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.3.0%2B15/Liso_v0.3.0+15-MacOS.dmg';
+    'https://github.com/Liso-Vault/app/releases/download/0.3.1%2B16/Liso_v0.3.1+16-MacOS.dmg';
 const kWindowsUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.3.0%2B15/Liso_v0.3.0+15-Windows.exe';
+    'https://github.com/Liso-Vault/app/releases/download/0.3.1%2B16/Liso_v0.3.1+16-Windows.exe';
 
 // DEVELOPER
 const kDeveloperName = 'Stackwares';
