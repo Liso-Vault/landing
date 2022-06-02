@@ -6,7 +6,7 @@ const kColor = Color(0xff02f297);
 // TEXTS
 const kName = 'Liso';
 
-const kBetaSubText = 'v0.3.2+18 - May 18, 2022';
+const kBetaSubText = 'v0.4.0+19 - June 2, 2022';
 
 const kDescription = """
 An open-source data management application that focuses mainly on securely storing private information and files.
@@ -20,7 +20,7 @@ const kInviteText =
 const kAirdropText =
     "Testers who are active, providing feedback, and contribute in a significant way will definitely be included in our upcoming airdrop before official launch!";
 
-const kGitHubUrl = 'https://github.com/Liso-Vault';
+const kGitHubUrl = 'https://github.com/liso-vault';
 const kTwitterUrl = 'https://twitter.com/liso_vault';
 const kDiscordUrl = 'https://discord.gg/d4EehG5qr3';
 const kProductHuntUrl =
@@ -32,9 +32,9 @@ const kIOSUrl = 'https://appdistribution.firebase.dev/i/af79efd9bce30e26';
 const kAndroidUrl =
     'https://play.google.com/store/apps/details?id=com.liso.app';
 const kMacOSUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.3.2%2B18/Liso_v0.3.2+18-MacOS.dmg';
+    'https://github.com/Liso-Vault/app/releases/download/0.4.0%2B19/Liso_v0.4.0+19-MacOS.dmg';
 const kWindowsUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.3.2%2B18/Liso_v0.3.2+18-Windows.exe';
+    'https://github.com/Liso-Vault/app/releases/download/0.4.0%2B19/Liso_v0.4.0+19-Windows.exe';
 
 // DEVELOPER
 const kDeveloperName = 'Stackwares';
