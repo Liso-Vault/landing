@@ -6,7 +6,7 @@ const kColor = Color(0xff02f297);
 // TEXTS
 const kName = 'Liso';
 
-const kBetaSubText = 'v0.4.0+19 - June 2, 2022';
+const kBetaSubText = 'v0.5.0+20 - June 15, 2022';
 
 const kDescription = """
 An open-source data management application that focuses mainly on securely storing private information and files.
@@ -25,6 +25,8 @@ const kTwitterUrl = 'https://twitter.com/liso_vault';
 const kDiscordUrl = 'https://discord.gg/d4EehG5qr3';
 const kProductHuntUrl =
     'https://www.producthunt.com/posts/liso-password-manager';
+const kGitcoinUrl =
+    'https://gitcoin.co/grants/5819/liso-decentralized-password-manager';
 const kEmail = 'mailto:dev@liso.dev';
 
 // DOWNLOAD URLS
@@ -32,9 +34,9 @@ const kIOSUrl = 'https://appdistribution.firebase.dev/i/af79efd9bce30e26';
 const kAndroidUrl =
     'https://play.google.com/store/apps/details?id=com.liso.app';
 const kMacOSUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.4.0%2B19/Liso_v0.4.0+19-MacOS.dmg';
+    'https://github.com/Liso-Vault/app/releases/download/0.5.0%2B20/Liso_v0.5.0+20-MacOS.dmg';
 const kWindowsUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.4.0%2B19/Liso_v0.4.0+19-Windows.exe';
+    'https://github.com/Liso-Vault/app/releases/download/0.5.0%2B20/Liso_v0.5.0+20-Windows.exe';
 
 // DEVELOPER
 const kDeveloperName = 'Stackwares';

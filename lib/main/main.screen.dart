@@ -173,8 +173,14 @@ class MainScreen extends GetView<MainScreenController> {
             const SizedBox(width: 10),
             TextButton.icon(
               icon: const Icon(LineIcons.productHunt),
-              label: const Text('ProductHunt'),
+              label: const Text('Product Hunt'),
               onPressed: () => launchUrlString(kProductHuntUrl),
+            ),
+            const SizedBox(width: 10),
+            TextButton.icon(
+              icon: const Icon(LineIcons.productHunt),
+              label: const Text('Gitcoin Grant'),
+              onPressed: () => launchUrlString(kGitcoinUrl),
             ),
           ],
         ),
