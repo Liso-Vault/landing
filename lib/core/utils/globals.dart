@@ -6,7 +6,7 @@ const kColor = Color(0xff02f297);
 // TEXTS
 const kName = 'Liso';
 
-const kBetaSubText = 'v0.5.0+20 - June 15, 2022';
+const kBetaSubText = 'v0.5.0+20 - June 22, 2022';
 
 const kDescription = """
 An open-source data management application that focuses mainly on securely storing private information and files.
@@ -30,7 +30,7 @@ const kGitcoinUrl =
 const kEmail = 'mailto:dev@liso.dev';
 
 // DOWNLOAD URLS
-const kIOSUrl = 'https://appdistribution.firebase.dev/i/af79efd9bce30e26';
+const kIOSUrl = 'https://testflight.apple.com/join/6Cty9vWh';
 const kAndroidUrl =
     'https://play.google.com/store/apps/details?id=com.liso.app';
 const kMacOSUrl =
