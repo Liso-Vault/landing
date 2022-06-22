@@ -6,7 +6,7 @@ const kColor = Color(0xff02f297);
 // TEXTS
 const kName = 'Liso';
 
-const kBetaSubText = 'v0.5.0+20 - June 22, 2022';
+const kBetaSubText = 'v0.5.1+23 - June 22, 2022';
 
 const kDescription = """
 An open-source data management application that focuses mainly on securely storing private information and files.
@@ -34,9 +34,9 @@ const kIOSUrl = 'https://testflight.apple.com/join/6Cty9vWh';
 const kAndroidUrl =
     'https://play.google.com/store/apps/details?id=com.liso.app';
 const kMacOSUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.5.0%2B20/Liso_v0.5.0+20-MacOS.dmg';
+    'https://github.com/Liso-Vault/app/releases/download/0.5.1%2B23/Liso_v0.5.1+23-MacOS.dmg';
 const kWindowsUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.5.0%2B20/Liso_v0.5.0+20-Windows.exe';
+    'https://github.com/Liso-Vault/app/releases/download/0.5.1%2B23/Liso_v0.5.1+23-Windows.exe';
 
 // DEVELOPER
 const kDeveloperName = 'Stackwares';
