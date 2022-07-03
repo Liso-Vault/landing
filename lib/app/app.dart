@@ -51,7 +51,9 @@ class App extends StatelessWidget {
         scheme: FlexScheme.green,
         colors: FlexSchemeColor.from(primary: kColor),
         appBarElevation: 0.3,
-        visualDensity: VisualDensity.standard,
+        visualDensity: GetPlatform.isMobile
+            ? VisualDensity.compact
+            : VisualDensity.standard,
         subThemesData: subThemes,
         onSurface: Colors.grey.shade500, // popupmenu background color
         scaffoldBackground: kBackgroundColor,

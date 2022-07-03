@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icons.dart';
 import 'package:liso/core/utils/console.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../core/utils/globals.dart';
 import '../../resources/resources.dart';
@@ -26,11 +24,11 @@ class MainAppBar extends StatelessWidget
       //   onPressed: () {},
       //   child: const Text('Security'),
       // ),
-      TextButton.icon(
-        onPressed: () => launchUrlString(kDiscordUrl),
-        icon: const Icon(LineIcons.discord),
-        label: const Text('Discord'),
-      ),
+      // TextButton.icon(
+      //   onPressed: () => launchUrlString(kDiscordUrl),
+      //   icon: const Icon(LineIcons.discord),
+      //   label: const Text('Discord'),
+      // ),
       // TextButton(
       //   onPressed: () {},
       //   child: const Text('Blog'),
