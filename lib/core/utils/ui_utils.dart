@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class UIUtils {
+class Utils {
+  static bool get isSmallScreen => Get.mediaQuery.size.width < 800;
+
   static showSnackBar({
     required String title,
     required String message,

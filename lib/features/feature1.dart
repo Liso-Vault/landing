@@ -1,0 +1,63 @@
+import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
+import 'package:liso/core/utils/globals.dart';
+
+import '../../resources/resources.dart';
+
+class Feature1 extends StatelessWidget {
+  const Feature1({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      spacing: 50,
+      runSpacing: 50,
+      alignment: WrapAlignment.center,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      children: [
+        Container(
+          constraints: const BoxConstraints(maxWidth: 500),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              RichText(
+                text: const TextSpan(
+                  text: 'Your ',
+                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                  children: [
+                    TextSpan(
+                      text: 'encrypted vault',
+                      style: TextStyle(color: kColor),
+                    ),
+                    TextSpan(text: ' is safe and reliable'),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                'Uses a powerful decentralized network of computers to route your data, making it impossible for anyone to leak or sell your data.',
+                style: TextStyle(fontSize: 25, color: Colors.grey),
+              ),
+              const SizedBox(height: 20),
+              const ListTile(
+                leading: Icon(LineIcons.check, color: kColor),
+                title: Text('Military-grade Encrypted'),
+                subtitle: Text(
+                  'AES-256 Bit + CBC with PKCS7 Padding encryption',
+                ),
+              ),
+              const ListTile(
+                leading: Icon(LineIcons.check, color: kColor),
+                title: Text('Decentralized'),
+                subtitle: Text(
+                  'No data breaches. Censorship Resistant.',
+                ),
+              ),
+            ],
+          ),
+        ),
+        Image.asset(ScreenshotsDesktop.desktop1, width: 600),
+      ],
+    );
+  }
+}

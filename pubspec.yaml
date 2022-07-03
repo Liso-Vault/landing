@@ -16,11 +16,15 @@ dependencies:
   # UI
   flutter_svg: 1.0.3
   line_icons: ^2.0.1
+  iconsax: ^0.0.8
   flex_color_scheme: 5.0.1 # themes
+  google_fonts: ^3.0.1
 
   # TOOLS
   logger: ^1.1.0
   url_launcher: 6.1.2
+  flutter_web_frame: ^0.0.3
+  scroll_to_index: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -34,3 +38,10 @@ flutter:
   assets:
     - assets/
     - assets/images/
+    - assets/images/brands/
+    - assets/images/mockups/
+    - assets/images/mockups/desktop/
+    - assets/images/mockups/phone/
+    - assets/images/screenshots/
+    - assets/images/screenshots/desktop/
+    - assets/images/screenshots/phone/
