@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 import 'package:liso/core/utils/console.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -25,9 +26,10 @@ class MainAppBar extends StatelessWidget
       //   onPressed: () {},
       //   child: const Text('Security'),
       // ),
-      TextButton(
+      TextButton.icon(
         onPressed: () => launchUrlString(kDiscordUrl),
-        child: const Text('Discord'),
+        icon: const Icon(LineIcons.discord),
+        label: const Text('Discord'),
       ),
       // TextButton(
       //   onPressed: () {},

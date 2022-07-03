@@ -229,6 +229,16 @@ class GridFeatures extends StatelessWidget {
                 color: kColor,
               ),
             ),
+            GridFeature(
+              title: 'Themes',
+              body:
+                  'Switch to Dark or Light themes according to your taste or automatically.',
+              image: Icon(
+                Iconsax.paintbucket,
+                size: kSize,
+                color: kColor,
+              ),
+            ),
           ],
         ),
       ],

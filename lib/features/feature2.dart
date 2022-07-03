@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:video_player/video_player.dart';
 
 import '../../core/utils/globals.dart';
-import '../../resources/resources.dart';
 
 class Feature2 extends StatelessWidget {
   const Feature2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final controller_ = VideoPlayerController.network(
+      'https://siasky.net/AACvsOx7iwfFjUeBMJyZQyt3arnQiEkmPdT-ie-8MVTulw',
+      videoPlayerOptions: VideoPlayerOptions(),
+    )
+      ..initialize()
+      ..setLooping(true)
+      ..play();
+
     return Wrap(
       spacing: 50,
       runSpacing: 50,
@@ -16,7 +24,14 @@ class Feature2 extends StatelessWidget {
       crossAxisAlignment: WrapCrossAlignment.center,
       verticalDirection: VerticalDirection.up,
       children: [
-        Image.asset(ScreenshotsDesktop.desktop1, width: 600),
+        // Image.asset(ScreenshotsDesktop.desktop1, width: 600),
+        Container(
+          constraints: const BoxConstraints(maxWidth: 600),
+          child: AspectRatio(
+            aspectRatio: controller_.value.aspectRatio,
+            child: VideoPlayer(controller_),
+          ),
+        ),
         Container(
           constraints: const BoxConstraints(maxWidth: 500),
           child: Column(

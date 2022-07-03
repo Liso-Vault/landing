@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:liso/core/utils/globals.dart';
-
-import '../../resources/resources.dart';
+import 'package:video_player/video_player.dart';
 
 class Feature1 extends StatelessWidget {
   const Feature1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final controller_ = VideoPlayerController.network(
+      'https://siasky.net/AADERgmxSazPT1eZ16ZXB0mB7sIvx_igGCqsTzt3n7hWDQ',
+      videoPlayerOptions: VideoPlayerOptions(),
+    )
+      ..initialize()
+      ..setLooping(true)
+      ..play();
+
     return Wrap(
       spacing: 50,
       runSpacing: 50,
@@ -23,7 +30,11 @@ class Feature1 extends StatelessWidget {
               RichText(
                 text: const TextSpan(
                   text: 'Your ',
-                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                   children: [
                     TextSpan(
                       text: 'encrypted vault',
@@ -56,7 +67,14 @@ class Feature1 extends StatelessWidget {
             ],
           ),
         ),
-        Image.asset(ScreenshotsDesktop.desktop1, width: 600),
+        // Image.asset(MockupsDesktop.feature1, width: 600),
+        Container(
+          constraints: const BoxConstraints(maxWidth: 600),
+          child: AspectRatio(
+            aspectRatio: controller_.value.aspectRatio,
+            child: VideoPlayer(controller_),
+          ),
+        ),
       ],
     );
   }

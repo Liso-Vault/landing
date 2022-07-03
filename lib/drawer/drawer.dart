@@ -7,6 +7,8 @@ class MainDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
+        primary: false,
+        shrinkWrap: true,
         children: [
           TextButton(
             onPressed: () {},
