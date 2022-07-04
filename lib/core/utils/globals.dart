@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 const kColor = Color(0xff02f297);
+const kBackgroundColor = Color(0xFF111111);
 
 // TEXTS
 const kName = 'Liso';

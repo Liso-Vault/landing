@@ -4,18 +4,19 @@ import 'package:line_icons/line_icons.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../core/utils/globals.dart';
+import '../core/utils/ui_utils.dart';
 
 class Download extends StatelessWidget {
   const Download({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final buttonWidth = Get.mediaQuery.size.width <= 450 ? 130.0 : 200.0;
+    final buttonWidth = Get.mediaQuery.size.width <= 450 ? 170.0 : 200.0;
 
     return Card(
       elevation: 0.2,
       child: Padding(
-        padding: const EdgeInsets.all(50),
+        padding: EdgeInsets.all(Utils.isSmallScreen ? 20 : 50),
         child: Column(
           children: [
             const Text(

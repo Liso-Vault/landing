@@ -4,6 +4,7 @@ import 'package:liso/core/utils/globals.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 import '../appbar/appbar.dart';
+import '../core/utils/ui_utils.dart';
 import '../download/download.dart';
 import '../features/feature1.dart';
 import '../features/feature2.dart';
@@ -18,20 +19,22 @@ class MainScreen extends GetView<MainScreenController> {
 
   @override
   Widget build(BuildContext context) {
-    const children = [
-      Header(),
-      SizedBox(height: 100),
-      Technologies(),
-      SizedBox(height: 100),
-      Feature1(),
-      SizedBox(height: 100),
-      Feature2(),
-      SizedBox(height: 100),
-      Download(),
-      SizedBox(height: 100),
-      GridFeatures(),
-      Divider(height: 100),
-      Footer(),
+    final spacing = Utils.isSmallScreen ? 50.0 : 100.0;
+
+    final children = [
+      const Header(),
+      SizedBox(height: spacing),
+      const Technologies(),
+      SizedBox(height: spacing),
+      const Feature1(),
+      SizedBox(height: spacing),
+      const Feature2(),
+      SizedBox(height: spacing),
+      const Download(),
+      SizedBox(height: spacing),
+      const GridFeatures(),
+      Divider(height: spacing),
+      const Footer(),
     ];
 
     final content = ListView(

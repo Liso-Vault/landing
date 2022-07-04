@@ -26,7 +26,6 @@ class App extends StatelessWidget {
       inputDecoratorUnfocusedBorderIsColored: false,
     );
 
-    const kBackgroundColor = Color(0xFF111111);
     // final visualDensity = MediaQuery.of(context).size.width > 1000
     //     ? const VisualDensity(
     //         horizontal: VisualDensity.maximumDensity,

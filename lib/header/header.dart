@@ -20,7 +20,7 @@ class Header extends StatelessWidget {
             children: [
               RichText(
                 text: TextSpan(
-                  text: 'The modern ',
+                  text: 'The ',
                   style: TextStyle(
                     fontSize: Utils.isSmallScreen ? 40 : 60,
                     fontWeight: FontWeight.bold,
@@ -31,7 +31,7 @@ class Header extends StatelessWidget {
                       text: 'Password Manager',
                       style: TextStyle(color: Colors.white),
                     ),
-                    TextSpan(text: ' powered by '),
+                    TextSpan(text: ' modernized by '),
                     TextSpan(
                       text: 'Crypto',
                       style: TextStyle(color: kColor),
