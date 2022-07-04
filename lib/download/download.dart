@@ -47,10 +47,7 @@ class Download extends StatelessWidget {
                     SizedBox(
                       width: buttonWidth,
                       child: ElevatedButton.icon(
-                        label: const Text(
-                          'iOS',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
+                        label: const Text('iOS'),
                         icon: const Icon(LineIcons.appStore),
                         onPressed: () => launchUrlString(kIOSUrl),
                       ),
@@ -67,10 +64,7 @@ class Download extends StatelessWidget {
                     SizedBox(
                       width: buttonWidth,
                       child: ElevatedButton.icon(
-                        label: const Text(
-                          'Android',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
+                        label: const Text('Android'),
                         icon: const Icon(LineIcons.googlePlay),
                         onPressed: () => launchUrlString(kAndroidUrl),
                       ),
@@ -87,10 +81,7 @@ class Download extends StatelessWidget {
                     SizedBox(
                       width: buttonWidth,
                       child: ElevatedButton.icon(
-                        label: const Text(
-                          'Mac',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
+                        label: const Text('Mac'),
                         icon: const Icon(LineIcons.appStore),
                         onPressed: () => launchUrlString(kMacOSUrl),
                       ),
@@ -107,10 +98,7 @@ class Download extends StatelessWidget {
                     SizedBox(
                       width: buttonWidth,
                       child: ElevatedButton.icon(
-                        label: const Text(
-                          'Windows',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
+                        label: const Text('Windows'),
                         icon: const Icon(LineIcons.windows),
                         onPressed: () => launchUrlString(kWindowsUrl),
                       ),

@@ -63,10 +63,10 @@ class App extends StatelessWidget {
               color: Colors.grey.shade100,
             ),
           ),
-          button: GoogleFonts.poppins(
+          button: GoogleFonts.lato(
             textStyle: const TextStyle(
               fontSize: 17,
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.bold,
             ),
           ),
         ),

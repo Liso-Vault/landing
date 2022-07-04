@@ -3,6 +3,7 @@ part of 'resources.dart';
 class Brands {
   Brands._();
 
+  static const String alchemy = 'assets/images/brands/alchemy.png';
   static const String filebase = 'assets/images/brands/filebase.png';
   static const String firebase = 'assets/images/brands/firebase.png';
   static const String flutter = 'assets/images/brands/flutter.png';

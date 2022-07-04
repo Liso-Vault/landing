@@ -28,17 +28,19 @@ class Technologies extends StatelessWidget {
           runSpacing: 20,
           children: [
             Brand(
-              text: 'Flutter',
+              text: 'Polygon',
               child: Image.asset(
-                Brands.flutter,
+                Brands.polygon,
+                width: kSize,
                 height: kSize,
                 color: Colors.grey,
               ),
             ),
             Brand(
-              text: 'Polygon',
+              text: 'Alchemy',
               child: Image.asset(
-                Brands.polygon,
+                Brands.alchemy,
+                width: kSize,
                 height: kSize,
                 color: Colors.grey,
               ),
@@ -47,6 +49,7 @@ class Technologies extends StatelessWidget {
               text: 'Filebase',
               child: Image.asset(
                 Brands.filebase,
+                width: kSize,
                 height: kSize,
                 color: Colors.grey,
               ),
@@ -55,6 +58,7 @@ class Technologies extends StatelessWidget {
               text: 'Sia',
               child: Image.asset(
                 Brands.sia,
+                width: kSize,
                 height: kSize,
                 color: Colors.grey,
               ),
@@ -63,6 +67,7 @@ class Technologies extends StatelessWidget {
               text: 'IPFS',
               child: Image.asset(
                 Brands.ipfs,
+                width: kSize,
                 height: kSize,
                 color: Colors.grey,
               ),
@@ -71,6 +76,7 @@ class Technologies extends StatelessWidget {
               text: 'Storj',
               child: Image.asset(
                 Brands.storj,
+                width: kSize,
                 height: kSize,
                 color: Colors.grey,
               ),
@@ -79,6 +85,16 @@ class Technologies extends StatelessWidget {
               text: 'Skynet',
               child: Image.asset(
                 Brands.skynet,
+                width: kSize,
+                height: kSize,
+                color: Colors.grey,
+              ),
+            ),
+            Brand(
+              text: 'Flutter',
+              child: Image.asset(
+                Brands.flutter,
+                width: kSize,
                 height: kSize,
                 color: Colors.grey,
               ),
@@ -87,6 +103,7 @@ class Technologies extends StatelessWidget {
               text: 'Firebase',
               child: Image.asset(
                 Brands.firebase,
+                width: kSize,
                 height: kSize,
                 color: Colors.grey,
               ),
