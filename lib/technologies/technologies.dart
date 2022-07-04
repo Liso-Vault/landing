@@ -24,7 +24,7 @@ class Technologies extends StatelessWidget {
           alignment: WrapAlignment.center,
           crossAxisAlignment: WrapCrossAlignment.center,
           runAlignment: WrapAlignment.center,
-          spacing: 100,
+          spacing: 60,
           runSpacing: 20,
           children: [
             Brand(
