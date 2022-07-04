@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../core/utils/globals.dart';
+import '../app/routes.dart';
+import '../core/utils/ui_utils.dart';
 import '../resources/resources.dart';
 
 class Footer extends StatelessWidget {
@@ -29,7 +32,7 @@ class Footer extends StatelessWidget {
               ],
             ),
             Wrap(
-              spacing: 25,
+              spacing: Utils.isSmallScreen ? 0 : 25,
               children: [
                 IconButton(
                   onPressed: () => launchUrlString(kGitHubUrl),
@@ -69,6 +72,23 @@ class Footer extends StatelessWidget {
                 // ),
               ],
             ),
+          ],
+        ),
+        const SizedBox(height: 20),
+        Wrap(
+          children: [
+            TextButton(
+              onPressed: () => Get.toNamed(Routes.terms),
+              child: const Text('Terms'),
+            ),
+            TextButton(
+              onPressed: () => Get.toNamed(Routes.privacy),
+              child: const Text('Privacy'),
+            ),
+            // TextButton(
+            //   onPressed: () => Get.toNamed(Routes.roadmap),
+            //   child: const Text('Roadmap'),
+            // ),
           ],
         ),
         const Divider(height: 100),

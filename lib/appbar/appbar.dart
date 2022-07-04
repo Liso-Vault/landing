@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:liso/core/utils/console.dart';
 
 import '../../core/utils/globals.dart';
 import '../../resources/resources.dart';
+import '../app/routes.dart';
 import '../main/main_screen.controller.dart';
 
 class MainAppBar extends StatelessWidget
@@ -48,9 +50,7 @@ class MainAppBar extends StatelessWidget
       // title: content,
       title: InkWell(
         borderRadius: BorderRadius.circular(50),
-        onTap: () {
-          //
-        },
+        onTap: () => Get.offNamedUntil(Routes.main, (route) => false),
         child: Padding(
           padding: const EdgeInsets.all(10),
           child: Row(

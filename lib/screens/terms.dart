@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:liso/appbar/appbar.dart';
+
+import '../core/utils/globals.dart';
 
 class TermsScreen extends StatelessWidget {
   const TermsScreen({Key? key}) : super(key: key);
@@ -39,15 +42,20 @@ Contact Us
 If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at liso.vault@gmail.com.
 """;
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Terms of Service'),
-      ),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Container(
-            padding: const EdgeInsets.all(30),
-            child: const Text(terms),
+    return Title(
+      color: kColor,
+      title: 'Liso - Terms',
+      child: Scaffold(
+        appBar: const MainAppBar(),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Container(
+              padding: const EdgeInsets.all(30),
+              child: const Text(
+                terms,
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
           ),
         ),
       ),

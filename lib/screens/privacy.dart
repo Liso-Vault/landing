@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:liso/core/utils/globals.dart';
+
+import '../appbar/appbar.dart';
 
 class PrivacyScreen extends StatelessWidget {
   const PrivacyScreen({Key? key}) : super(key: key);
@@ -60,15 +63,20 @@ Contact Us
 If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at liso.vault@gmail.com.
     """;
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Privacy Policy'),
-      ),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Container(
-            padding: const EdgeInsets.all(30),
-            child: const Text(privacy),
+    return Title(
+      color: kColor,
+      title: 'Liso - Privacy',
+      child: Scaffold(
+        appBar: const MainAppBar(),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Container(
+              padding: const EdgeInsets.all(30),
+              child: const Text(
+                privacy,
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
           ),
         ),
       ),

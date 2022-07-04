@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:liso/core/utils/globals.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 import '../appbar/appbar.dart';
@@ -50,12 +51,16 @@ class MainScreen extends GetView<MainScreenController> {
           .toList(),
     );
 
-    return Padding(
-      padding: const EdgeInsets.only(top: 30),
-      child: Scaffold(
-        appBar: const MainAppBar(),
-        // endDrawer: const MainDrawer(),
-        body: content,
+    return Title(
+      color: kColor,
+      title: 'Liso Password Manager',
+      child: Padding(
+        padding: const EdgeInsets.only(top: 30),
+        child: Scaffold(
+          appBar: const MainAppBar(),
+          // endDrawer: const MainDrawer(),
+          body: content,
+        ),
       ),
     );
   }
