@@ -23,11 +23,11 @@ class Footer extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Image.asset(Images.logo, width: 50),
+                Image.asset(Images.logo, width: 30),
                 const SizedBox(width: 15),
                 const Text(
                   kName,
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 30),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
               ],
             ),
