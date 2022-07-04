@@ -46,7 +46,7 @@ class Feature1 extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               const Text(
-                'Uses a powerful decentralized network of computers to route your data, making it impossible for anyone to leak or sell your data.',
+                'Uses a powerful decentralized network of computers to route your encrypted data, making it impossible for anyone to leak or sell your data.',
                 style: TextStyle(fontSize: 25, color: Colors.grey),
               ),
               const SizedBox(height: 20),

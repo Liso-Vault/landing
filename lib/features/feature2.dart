@@ -55,7 +55,7 @@ class Feature2 extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               const Text(
-                'Save a wide array of data like passwords, mnemonic seed phrases, identifications, and more. Generate OTP (One-Time Passwords). Encrypt and upload files on a decentralized cloud storage provider. Store cryptocurrencies, NFTs and more.',
+                'Save a wide array of data like passwords, mnemonic seed phrases, identifications, and more. Generate OTP (One-Time Passwords). Encrypt and store your files in a secure decentralized cloud storage. Store cryptocurrencies, NFTs and more.',
                 style: TextStyle(fontSize: 25, color: Colors.grey),
               ),
               const SizedBox(height: 20),

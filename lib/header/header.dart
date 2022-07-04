@@ -48,14 +48,46 @@ class Header extends StatelessWidget {
               const SizedBox(height: 20),
               RichText(
                 text: const TextSpan(
-                  text:
-                      'A complex piece of open-source software made very easy to use for end users. Built with cutting-edge tech and designed to securely store your most precious passwords, seed phrases, files, cryptocurrencies and NFTs where ',
+                  text: 'A complex piece of ',
                   style: TextStyle(fontSize: 25, color: Colors.grey),
                   children: [
                     TextSpan(
+                      text: 'open-source',
+                      style: TextStyle(
+                        color: kColor,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    TextSpan(
+                      text:
+                          ' software made very easy to use for end users. Built with ',
+                    ),
+                    TextSpan(
+                      text: 'cutting-edge',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    TextSpan(
+                      text:
+                          ' tech and designed to securely store your most precious ',
+                    ),
+                    TextSpan(
+                      text: 'passwords, seed phrases, files, cryptocurrencies',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    TextSpan(
+                      text: ' and ',
+                    ),
+                    TextSpan(
+                      text: 'NFTs',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    TextSpan(
+                      text: ' where ',
+                    ),
+                    TextSpan(
                       text: 'only you',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: kColor,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
