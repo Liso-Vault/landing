@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:liso/core/utils/console.dart';
 import 'package:liso/core/utils/ui_utils.dart';
 
 import '../../core/utils/globals.dart';
 import '../../resources/resources.dart';
+import '../app/routes.dart';
 import '../main/main_screen.controller.dart';
 
 class MainAppBar extends StatelessWidget
@@ -16,15 +18,13 @@ class MainAppBar extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      centerTitle: false,
-      backgroundColor: kBackgroundColor,
-      title: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Row(
+    final content = Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        InkWell(
+          onTap: () => Get.offNamedUntil(Routes.main, (route) => false),
+          child: Row(
             children: [
-              SizedBox(width: Utils.isSmallScreen ? 10 : 40),
               Image.asset(Images.logo, width: Utils.isSmallScreen ? 30 : 50),
               const SizedBox(width: 10),
               Text(
@@ -36,12 +36,18 @@ class MainAppBar extends StatelessWidget
               ),
             ],
           ),
-          ElevatedButton(
-            onPressed: MainScreenController.to.scrollToDownload,
-            child: const Text('Download'),
-          ),
-        ],
-      ),
+        ),
+        ElevatedButton(
+          onPressed: MainScreenController.to.scrollToDownload,
+          child: const Text('Download'),
+        ),
+      ],
+    );
+
+    return AppBar(
+      centerTitle: false,
+      backgroundColor: kBackgroundColor,
+      title: content,
     );
   }
 }

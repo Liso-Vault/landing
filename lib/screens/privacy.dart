@@ -10,7 +10,7 @@ class PrivacyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     const privacy = """
 Privacy Policy
-Stackwares built the Liso app as a Freemium app. This SERVICE is provided by Stackwares at no cost and is intended for use as is.
+We built the Liso app as a Freemium app. This SERVICE is provided by Liso at no cost and is intended for use as is.
 
 This page is used to inform visitors regarding our policies with the use of our app.
 
@@ -22,8 +22,8 @@ The app does use third-party services but never any personally identifiable info
 
 Third Party Service Providers
 
-Google Analytics for Firebase
-Firebase Crashlytics
+- Firebase - https://firebase.google.com
+- Filebase - https://filebase.com
 
 We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.
 
