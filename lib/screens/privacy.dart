@@ -60,7 +60,7 @@ This policy is effective as of 2022-05-03
 
 Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at liso.vault@gmail.com.
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at dev@liso.dev
     """;
 
     return Title(
