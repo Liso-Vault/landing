@@ -52,9 +52,9 @@ class Feature1 extends StatelessWidget {
               const SizedBox(height: 20),
               const ListTile(
                 leading: Icon(LineIcons.check, color: kColor),
-                title: Text('Military-grade Encrypted'),
+                title: Text('AES-256 Encrypted'),
                 subtitle: Text(
-                  'AES-256 Bit + CBC with PKCS7 Padding encryption',
+                  'Using Advanced Encryption Standard + CBC with PKCS7 Padding',
                 ),
               ),
               const ListTile(
