@@ -31,14 +31,15 @@ const kGitcoinUrl =
 const kEmail = 'mailto:dev@liso.dev';
 
 // DOWNLOAD URLS
-const kIOSVersion = 'v0.5.1+23';
-const kIOSUrl = 'https://testflight.apple.com/join/6Cty9vWh';
+const kIOSVersion = 'v0.5.2+28';
+const kIOSUrl =
+    'https://apps.apple.com/us/app/liso-password-manager/id1621225567';
 
-const kAndroidVersion = 'v0.5.1+23';
+const kAndroidVersion = 'v0.5.3+30';
 const kAndroidUrl =
     'https://play.google.com/store/apps/details?id=com.liso.app';
 
-const kMacOSVersion = 'v0.5.1+23';
+const kMacOSVersion = 'v0.5.2+28';
 const kMacOSUrl =
     'https://github.com/Liso-Vault/app/releases/download/0.5.1%2B23/Liso_v0.5.1+23-MacOS.dmg';
 
