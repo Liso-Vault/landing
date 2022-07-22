@@ -202,7 +202,7 @@ class GridFeatures extends StatelessWidget {
               ),
             ),
             GridFeature(
-              title: 'OTP Generator',
+              title: 'OTP Authenticator',
               body:
                   'Store and generate One Time Passwords for your social accounts and websites you use',
               image: Icon(
