@@ -43,9 +43,9 @@ const kMacOSVersion = 'v0.5.3+30';
 const kMacOSUrl =
     'https://apps.apple.com/us/app/liso-password-manager/id1621225567';
 
-const kWindowsOSVersion = 'v0.5.1+23';
+const kWindowsOSVersion = 'v0.5.3+33';
 const kWindowsUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.5.1%2B23/Liso_v0.5.1+23-Windows.exe';
+    'https://github.com/Liso-Vault/app/releases/download/0.5.3%2B33/Liso_v0.5.3+33-Windows.exe';
 
 // DEVELOPER
 const kDeveloperName = 'Liso';
