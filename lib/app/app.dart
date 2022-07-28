@@ -40,7 +40,7 @@ class App extends StatelessWidget {
       // locale: Locale(persistence.localeCode.val),
       fallbackLocale: const Locale('en', 'US'),
       // NAVIGATION
-      initialRoute: Routes.main,
+      initialRoute: AppPages.initial,
       initialBinding: MainBinding(),
       getPages: AppPages.routes,
       defaultTransition: Transition.native,
