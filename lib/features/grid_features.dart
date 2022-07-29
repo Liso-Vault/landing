@@ -184,7 +184,7 @@ class GridFeatures extends StatelessWidget {
             GridFeature(
               title: 'Password Health',
               body:
-                  'Monitor weak passwords and suggest to generate a strong password',
+                  'Monitor weak & re-used passwords and suggest to generate a strong password',
               image: Icon(
                 Iconsax.health,
                 size: kSize,
