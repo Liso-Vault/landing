@@ -31,34 +31,22 @@ class GridFeatures extends StatelessWidget {
           alignment: WrapAlignment.center,
           children: const [
             GridFeature(
+              title: 'Autofill',
+              body:
+                  'Conveniently autofill and save your credentials effortlessly (Android)',
+              image: Icon(Iconsax.pen_add, size: kSize, color: kColor),
+            ),
+            GridFeature(
               title: 'Works Offline',
               body:
                   'Whether you are connected to the internet or not. It just works.',
-              image: Icon(
-                Icons.wifi_off_rounded,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Icons.wifi_off_rounded, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'Biometric Auth',
               body:
                   'Conveniently decrypt and access your vault with your Fingerprint or Face biometrics',
-              image: Icon(
-                LineIcons.fingerprint,
-                size: kSize,
-                color: kColor,
-              ),
-            ),
-            GridFeature(
-              title: 'Shared Vaults',
-              body:
-                  'Effortlessly share your vaults with other users in a secure environment',
-              image: Icon(
-                Iconsax.share,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(LineIcons.fingerprint, size: kSize, color: kColor),
             ),
           ],
         ),
@@ -71,31 +59,19 @@ class GridFeatures extends StatelessWidget {
             GridFeature(
               title: 'Sync Devices',
               body: 'Enjoy automatic syncing between all your devices',
-              image: Icon(
-                LineIcons.syncIcon,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(LineIcons.syncIcon, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'Generate Passwords',
               body:
                   'A powerful password generator is built-in to ensure your future passwords are very strong',
-              image: Icon(
-                LineIcons.userLock,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(LineIcons.userLock, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'Cloud Storage',
               body:
                   'Encrypt and store your precious files on a secure and decentralized cloud storage network',
-              image: Icon(
-                Iconsax.cloud,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Iconsax.cloud, size: kSize, color: kColor),
             ),
           ],
         ),
@@ -106,34 +82,23 @@ class GridFeatures extends StatelessWidget {
           alignment: WrapAlignment.center,
           children: const [
             GridFeature(
-              title: 'Crypto Wallet',
+              title: 'Shared Vaults',
               body:
-                  'Securely store your cryptocurrencies and NFTs in a secure and built-in crypto wallet.',
-              image: Icon(
-                LineIcons.wallet,
-                size: kSize,
-                color: kColor,
-              ),
+                  'Effortlessly share your vaults with other users in a secure environment',
+              image: Icon(Iconsax.share, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'Cipher Tool',
               body:
                   'Protect your files with AES-256 encryption before sending them to friends or coworkers.',
-              image: Icon(
-                LineIcons.alternateShield,
-                size: kSize,
-                color: kColor,
-              ),
+              image:
+                  Icon(LineIcons.alternateShield, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'Customizations',
               body:
                   'Create custom fields, categories, and vaults. Even re-order fields as you edit.',
-              image: Icon(
-                Iconsax.edit,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Iconsax.edit, size: kSize, color: kColor),
             ),
           ],
         ),
@@ -147,31 +112,19 @@ class GridFeatures extends StatelessWidget {
               title: 'Zero-Knowledge',
               body:
                   'No phone numbers, emails, or personal identifiable information required to get started. Just your private key.',
-              image: Icon(
-                LineIcons.wallet,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(LineIcons.wallet, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'Open Source',
               body:
                   'Ensure the integrity and security of your vault by self auditing and verifying the code.',
-              image: Icon(
-                Iconsax.code,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Iconsax.code, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'Cross Platform',
               body:
                   'Available on iOS, iPadOS, MacOS, Android, and Windows. (Soon on Linux and the Web)',
-              image: Icon(
-                Iconsax.cpu,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Iconsax.cpu, size: kSize, color: kColor),
             ),
           ],
         ),
@@ -185,31 +138,19 @@ class GridFeatures extends StatelessWidget {
               title: 'Password Health',
               body:
                   'Monitor weak & re-used passwords and suggest to generate a strong password',
-              image: Icon(
-                Iconsax.health,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Iconsax.health, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'Seed Generator',
               body:
                   'Generate a 12 or 24 word mnemonic seed phrase for your next Web3 wallet',
-              image: Icon(
-                Iconsax.key,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Iconsax.key, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'OTP Authenticator',
               body:
                   'Store and generate One Time Passwords for your social accounts and websites you use',
-              image: Icon(
-                Iconsax.password_check,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Iconsax.password_check, size: kSize, color: kColor),
             ),
           ],
         ),
@@ -220,24 +161,22 @@ class GridFeatures extends StatelessWidget {
           alignment: WrapAlignment.center,
           children: const [
             GridFeature(
+              title: 'Crypto Wallet',
+              body:
+                  'Securely store your cryptocurrencies and NFTs in a secure and built-in crypto wallet.',
+              image: Icon(LineIcons.wallet, size: kSize, color: kColor),
+            ),
+            GridFeature(
               title: 'Multiple Vaults',
               body:
                   'Keep everything organized with separate vaults for work, personal, family, or your custom vault.',
-              image: Icon(
-                Iconsax.box,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Iconsax.box, size: kSize, color: kColor),
             ),
             GridFeature(
               title: 'Themes',
               body:
                   'Switch to Dark or Light themes according to your taste or automatically.',
-              image: Icon(
-                Iconsax.paintbucket,
-                size: kSize,
-                color: kColor,
-              ),
+              image: Icon(Iconsax.paintbucket, size: kSize, color: kColor),
             ),
           ],
         ),
