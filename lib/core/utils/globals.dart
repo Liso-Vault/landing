@@ -15,7 +15,7 @@ const kProductHuntUrl =
     'https://www.producthunt.com/posts/liso-password-manager';
 
 // DOWNLOAD URLS
-const kIOSVersion = 'v0.5.3+30';
+const kIOSVersion = 'v0.6.0+33';
 const kIOSUrl =
     'https://apps.apple.com/us/app/liso-password-manager/id1621225567';
 
@@ -23,7 +23,7 @@ const kAndroidVersion = 'v0.6.0+33';
 const kAndroidUrl =
     'https://play.google.com/store/apps/details?id=com.liso.app';
 
-const kMacOSVersion = 'v0.5.3+30';
+const kMacOSVersion = 'v0.6.0+33';
 const kMacOSUrl =
     'https://apps.apple.com/us/app/liso-password-manager/id1621225567';
 
