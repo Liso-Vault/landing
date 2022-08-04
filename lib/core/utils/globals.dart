@@ -7,35 +7,19 @@ const kBackgroundColor = Color(0xFF111111);
 // TEXTS
 const kName = 'Liso';
 
-const kBetaSubText = 'v0.5.3+30 - July 17, 2022';
-
-const kDescription = """
-An open-source data management application that focuses mainly on securely storing private information and files.
-
-Liso uses a powerful decentralized network of computers to route your files, making it impossible for anyone to leak or sell your data. You have the option to choose your provider: IPFS, Sia, Storj, and Skynet.
-""";
-
-const kInviteText =
-    "Don't miss the train! Be one of the early users of the revolutionary app Liso where you can store your sensitive data and files securely and censorship-free with the power of decentralization. Just how it should be.";
-
-const kAirdropText =
-    "Testers who are active, providing feedback, and contribute in a significant way will definitely be included in our upcoming airdrop before official launch!";
-
 const kGitHubUrl = 'https://github.com/liso-vault';
 const kTwitterUrl = 'https://twitter.com/liso_vault';
 const kDiscordUrl = 'https://discord.gg/d4EehG5qr3';
+
 const kProductHuntUrl =
     'https://www.producthunt.com/posts/liso-password-manager';
-const kGitcoinUrl =
-    'https://gitcoin.co/grants/5819/liso-decentralized-password-manager';
-const kEmail = 'mailto:dev@liso.dev';
 
 // DOWNLOAD URLS
 const kIOSVersion = 'v0.5.3+30';
 const kIOSUrl =
     'https://apps.apple.com/us/app/liso-password-manager/id1621225567';
 
-const kAndroidVersion = 'v0.5.3+30';
+const kAndroidVersion = 'v0.6.0+33';
 const kAndroidUrl =
     'https://play.google.com/store/apps/details?id=com.liso.app';
 
@@ -43,9 +27,9 @@ const kMacOSVersion = 'v0.5.3+30';
 const kMacOSUrl =
     'https://apps.apple.com/us/app/liso-password-manager/id1621225567';
 
-const kWindowsOSVersion = 'v0.5.3+33';
+const kWindowsOSVersion = 'v0.6.0+33';
 const kWindowsUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.5.3%2B33/Liso_v0.5.3+33-Windows.exe';
+    'https://github.com/Liso-Vault/app/releases/download/0.5.3%2B33/Liso_v0.6.0+33-Windows.exe';
 
 // DEVELOPER
 const kDeveloperName = 'Liso';
