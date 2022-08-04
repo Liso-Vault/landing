@@ -29,7 +29,7 @@ const kMacOSUrl =
 
 const kWindowsOSVersion = 'v0.6.0+33';
 const kWindowsUrl =
-    'https://github.com/Liso-Vault/app/releases/download/0.5.3%2B33/Liso_v0.6.0+33-Windows.exe';
+    'https://github.com/Liso-Vault/app/releases/download/0.6.0%2B33/Liso_v0.6.0+33-Windows.exe';
 
 // DEVELOPER
 const kDeveloperName = 'Liso';
