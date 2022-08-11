@@ -1,11 +1,11 @@
 {
     "name": "Liso Password Manager",
-    "short_name": "Liso",
+    "short_name": "Liso Password Manager",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#262626",
     "theme_color": "#02f297",
-    "description": "An open-source data management application that focuses mainly on securely storing private information and files.",
+    "description": "Liso is an open source password manager, digital vault, and form filler that's designed to secure your information using modern Web3 technologies.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
