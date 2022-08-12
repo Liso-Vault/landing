@@ -97,12 +97,12 @@ class Footer extends StatelessWidget {
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.grey),
         ),
-        const SizedBox(height: 10),
-        const Text(
-          'Bacolod City, Negros Occidental, 6100, Philippines',
-          textAlign: TextAlign.center,
-          style: TextStyle(color: Colors.grey),
-        ),
+        // const SizedBox(height: 10),
+        // const Text(
+        //   'Bacolod City, Negros Occidental, 6100, Philippines',
+        //   textAlign: TextAlign.center,
+        //   style: TextStyle(color: Colors.grey),
+        // ),
       ],
     );
   }
