@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description"
+    content="Liso is an open source password manager, digital vault, and form filler that's designed to secure your information using modern Web3 technologies.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="landing">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://liso.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Liso Password Manager">
+  <meta property="og:description"
+    content="Liso is an open source password manager, digital vault, and form filler that's designed to secure your information using modern Web3 technologies.">
+  <meta property="og:image" content="https://liso.dev/opengraph.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="liso.dev">
+  <meta property="twitter:url" content="https://liso.dev/">
+  <meta name="twitter:title" content="Liso Password Manager">
+  <meta name="twitter:description"
+    content="Liso is an open source password manager, digital vault, and form filler that's designed to secure your information using modern Web3 technologies.">
+  <meta name="twitter:image" content="https://liso.dev/opengraph.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>Liso Password Manager</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '1820936317';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+
+  <style>
+    #loader {
+      width: 20px;
+      height: 20px;
+      border: 6px solid #686868;
+      border-top: 6px solid #00ff88;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+      /* center */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color:black;">
+  <div id="loader"></div>
+  <script>
+    window.addEventListener('load', function (ev) {
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function (engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function (appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
+</body>
+
+</html>
