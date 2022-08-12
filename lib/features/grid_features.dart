@@ -68,10 +68,10 @@ class GridFeatures extends StatelessWidget {
               image: Icon(LineIcons.userLock, size: kSize, color: kColor),
             ),
             GridFeature(
-              title: 'Cloud Storage',
+              title: 'Self Hostable',
               body:
-                  'Encrypt and store your precious files on a secure and decentralized cloud storage network',
-              image: Icon(Iconsax.cloud, size: kSize, color: kColor),
+                  'Simply use your own S3 configuration to enable self-hosting',
+              image: Icon(Iconsax.data, size: kSize, color: kColor),
             ),
           ],
         ),
@@ -95,10 +95,10 @@ class GridFeatures extends StatelessWidget {
                   Icon(LineIcons.alternateShield, size: kSize, color: kColor),
             ),
             GridFeature(
-              title: 'Customizations',
+              title: 'Cloud Storage',
               body:
-                  'Create custom fields, categories, and vaults. Even re-order fields as you edit.',
-              image: Icon(Iconsax.edit, size: kSize, color: kColor),
+                  'Encrypt and store your precious files on a secure and decentralized cloud storage network',
+              image: Icon(Iconsax.cloud, size: kSize, color: kColor),
             ),
           ],
         ),
@@ -177,6 +177,20 @@ class GridFeatures extends StatelessWidget {
               body:
                   'Switch to Dark or Light themes according to your taste or automatically.',
               image: Icon(Iconsax.paintbucket, size: kSize, color: kColor),
+            ),
+          ],
+        ),
+        const SizedBox(height: 50),
+        Wrap(
+          spacing: 50,
+          runSpacing: 50,
+          alignment: WrapAlignment.center,
+          children: const [
+            GridFeature(
+              title: 'Customizations',
+              body:
+                  'Create custom fields, categories, and vaults. Even re-order fields as you edit.',
+              image: Icon(Iconsax.edit, size: kSize, color: kColor),
             ),
           ],
         ),
